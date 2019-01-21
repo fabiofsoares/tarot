@@ -1,13 +1,15 @@
 import React from 'react';
-import { TouchableWithoutFeedback, StyleSheet, View, Text } from 'react-native';
+import { Animated, TouchableWithoutFeedback, StyleSheet, View, Text } from 'react-native';
+import cards from '../assets/locales/fr/cards'
 
 export default class Hello extends React.Component {
   constructor(props){
       super(props)
       this.state = {
-          time: 0          
+          time: 0,
+          card: {}          
       }
-      const time = '';
+      //this.time = '';
   }
   
   static navigationOptions = {
@@ -15,17 +17,22 @@ export default class Hello extends React.Component {
   };
   
   onPress(){
-      time = setInterval(this.timing(), 1000)      
+      this.time = setInterval(this.timing, 10)
+      //Animated.timing(this, {duration: 1000}).start(this.timing())     
   }
-  timing(){
+  timing = () => {
     this.setState((prevState) => ({
-        time: prevState.time + 1
+        time: prevState.time >= 78 ? 0 : prevState.time + 1
     })); 
   }
   handlePressOut(e){
-    clearInterval(time)
+    clearInterval(this.time)
+    this.setState({
+        card: cards.tarot_interpretations[this.state.time]
+    })
   }
   render() {
+      //console.log('length : ', cards.tarot_interpretations.length)
     return (
       <View style={styles.container}>
         <View style={styles.message}>
@@ -34,11 +41,13 @@ export default class Hello extends React.Component {
         </View>
         <View style={styles.container_btn}>
             <TouchableWithoutFeedback onPressIn={this.onPress.bind(this)} onPressOut={this.handlePressOut.bind(this)}>
-            <View style={styles.button} >
-            <Text> Démarrer </Text>
-            </View>
-                
+                <View style={styles.button} >
+                    <Text> Démarrer </Text>
+                </View>                
             </TouchableWithoutFeedback>
+        </View>
+        <View style={styles.card}>
+            <Text> {this.state.card && this.state.card.name } </Text>
         </View>
       </View>
     );

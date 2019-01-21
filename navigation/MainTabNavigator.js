@@ -60,5 +60,8 @@ export default createBottomTabNavigator({
   LinksStack,
   SettingsStack,
   Hello,
+<<<<<<< HEAD
   Caroussel,
+=======
+>>>>>>> b37070fd0c587ab9a25132ad8d632ffdc31d31d1
 });
