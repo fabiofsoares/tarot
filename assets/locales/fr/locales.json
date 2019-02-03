@@ -1,4 +1,41 @@
 {
-    "home": {},
-    "introduction": {}
+    "home": {
+        "title": "Jeu de Tarot",
+        "subtitle": "Ipsum est simplement",
+        "intro": [
+            {
+                "title": "bonjour, item 1",
+                "text": "Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard"
+            },
+            {
+                "title": "bonjour, item 2",
+                "text": "Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard"
+            },
+            {
+                "title": "bonjour, item 3",
+                "text": "Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard"
+            }
+        ]
+    },
+    "game": {
+        "title": "Jeu de Tarot",
+        "subtitle": "Pensez à une question et poussez le bouton",
+        "reponses":[
+            {
+                "title": "oui"
+            },
+            {
+                "title": "non"
+            },
+            {
+                "title": "peut-être"
+            },
+            {
+                "title": "attends un peu"
+            },
+            {
+                "title": "il y a qqch de mieux"
+            }
+        ]
+    }
 }
