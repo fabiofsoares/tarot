@@ -18,14 +18,20 @@ export default class Header extends React.Component {
 
 const styles = StyleSheet.create({
   header: {        
-        borderColor: '#000000',
-        borderWidth: 2,
+       /*  borderColor: '#000000',
+        borderWidth: 2, */
         width: '100%'
   },
   title: {
-    textAlign: 'center'
+    textAlign: 'center',
+    fontSize: 20,    
+    textTransform: 'uppercase',
+    color: '#2c3e50'
   },
   subtitle: {
-    textAlign: 'center'
+    textAlign: 'center',
+    marginTop: 5,
+    fontSize: 16,
+    color: '#7f8c8d'
   }
 });

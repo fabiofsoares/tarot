@@ -37,7 +37,7 @@ export default class Card extends React.Component {
     }
    
     _renderItem ({item, index}) {
-        console.log('item :', item.type)
+        
         return (
             <View style={styles.slide} key={index}>                
                 {item.title && <Text style={styles.title}>{ item.title }</Text>}
