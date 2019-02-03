@@ -1,7 +1,7 @@
 {
     "home": {
         "title": "Jeu de Tarot",
-        "subtitle": "Ipsum est simplement",
+        "subtitle": "Comment ça marche ?",
         "intro": [
             {
                 "title": "bonjour, item 1",
@@ -22,19 +22,19 @@
         "subtitle": "Pensez à une question et poussez le bouton",
         "reponses":[
             {
-                "title": "oui"
+                "title": "Oui"
             },
             {
-                "title": "non"
+                "title": "Non"
             },
             {
-                "title": "peut-être"
+                "title": "Peut-être"
             },
             {
-                "title": "attends un peu"
+                "title": "Attends un peu"
             },
             {
-                "title": "il y a qqch de mieux"
+                "title": "Il y a qqch de mieux"
             }
         ]
     },

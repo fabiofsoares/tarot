@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {Modal, Text, TouchableHighlight, View, Alert} from 'react-native';
+import {Modal, Text, TouchableHighlight, View, StyleSheet, Alert} from 'react-native';
 import Card from './card'
 
 export default class ModalApp extends Component {
@@ -34,11 +34,21 @@ export default class ModalApp extends Component {
             </View>
         </Modal>
 
-        <TouchableHighlight
+        <TouchableHighlight  style={styles.button}
           onPress={() => { this.setModalVisible(true); }}>
-          <Text>Voir plus ...</Text>
+          <Text style={{color: '#2c3e50', fontSize: 12}} >Voir la carte</Text>
         </TouchableHighlight>
       </View>
     );
   }
 }
+const styles = StyleSheet.create({
+  button: {
+      borderColor: '#2c3e50',
+      borderWidth: 1,
+      backgroundColor: '#FFFFFF',
+      padding: 8,
+      width: 90,
+      alignSelf: 'center' 
+  }
+})

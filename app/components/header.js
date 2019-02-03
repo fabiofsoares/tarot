@@ -17,10 +17,8 @@ export default class Header extends React.Component {
 }
 
 const styles = StyleSheet.create({
-  header: {        
-       /*  borderColor: '#000000',
-        borderWidth: 2, */
-        width: '100%'
+  header: { 
+    width: '100%'
   },
   title: {
     textAlign: 'center',
