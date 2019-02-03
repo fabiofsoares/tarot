@@ -40,7 +40,15 @@
     },
     "about": {
         "title": "A propos",
-        "subtitle": "Pensez à une question et poussez le bouton"
+        "subtitle": "Pensez à une question et poussez le bouton",
+        "members":[
+            {
+                "name":"Fabio",
+                "poste": "dev",
+                "img": ""
+            }
+        ],
+        "text": "text de mentions"
         
     }
 }

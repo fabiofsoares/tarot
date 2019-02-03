@@ -10,6 +10,7 @@ export default class Game extends React.Component {
         this.state = {
             time: 0,
             card: {},
+            press: false,
             reponse: ''          
         }
     }
@@ -50,7 +51,7 @@ export default class Game extends React.Component {
 
                     <View style={styles.button}>
                         <TouchableWithoutFeedback onPressIn={this.onPress.bind(this)} onPressOut={this.handlePressOut.bind(this)}>
-                            <Text> Démarrer </Text>
+                            <Text style={styles.textButton}>Lancer</Text>
                         </TouchableWithoutFeedback>
                     </View>
 
@@ -61,9 +62,6 @@ export default class Game extends React.Component {
                     </View>
                 </View>
 
-                <View style={styles.footer}>
-                    <Text>Hello Carousel</Text>
-                </View>                
             </View>
         );
     }
@@ -71,17 +69,30 @@ export default class Game extends React.Component {
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,    
-    justifyContent: 'space-between',    
+    flex: 1,
     backgroundColor: '#fff',
     alignItems: 'center',
-    paddingTop: 50,
-    //justifyContent: 'center',
+    justifyContent: 'flex-start',
+    padding: 20,
+    paddingTop: 0
+  },
+  button:{
+    borderColor: '#2c3e50',
+    backgroundColor: '#000',
+    padding: 20,
+    width: 180
+   
+  },
+  textButton:{
+    color:'#FFFFFF',
+    textAlign: 'center',
+    fontSize: 25
   }, 
   main: {
         flex: 1,
+        alignItems: 'center',
         marginTop: 50,
-        width: '90%', 
+        width: '100%', 
         borderColor: '#000000',
         borderWidth: 2
   },

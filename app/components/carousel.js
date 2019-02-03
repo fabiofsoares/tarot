@@ -74,12 +74,12 @@ export default class AppCarousel extends React.Component {
 const styles = StyleSheet.create({
     slide: {
         flex: 1,
-        backgroundColor: '#fff',
+        backgroundColor: '#ecf0f1',
         alignItems: 'center',
         padding: 10,
         paddingTop: 30,
         borderColor: '#95a5a6',
-        borderWidth: 1       
+        borderWidth: 0.5       
     },
     header:{        
         flexDirection: 'row'

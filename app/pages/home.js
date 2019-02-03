@@ -28,12 +28,10 @@ export default class Home extends React.Component {
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,    
-    justifyContent: 'space-between',    
+    flex: 1,
     backgroundColor: '#fff',
     alignItems: 'center',
-    //paddingTop: 50,
-    //justifyContent: 'center',
+    justifyContent: 'flex-start'
   }, 
   main: {
         flex: 1,
