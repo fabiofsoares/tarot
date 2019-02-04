@@ -60,7 +60,7 @@ export default class Game extends React.Component {
                         <Text style={styles.resp}>{ this.state.reponse && this.state.reponse }</Text>
                         <Text style={styles.label}>Votre Carte :</Text>
                         <Text style={styles.cardName}>{ this.state.card && this.state.card.name }</Text>
-                        <Modal card={ this.state.card.descriptions }/>
+                        <Modal name={this.state.card.name} card={ this.state.card.descriptions }/>
                     </View>
                 )}
 

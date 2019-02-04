@@ -13,7 +13,7 @@ export default class ModalApp extends Component {
 
   render() {
     return (
-      <View style={{marginTop: 22}}>
+      <View style={{marginTop: 22, padding: 10}}>
         
         <Modal
             animationType="slide"
@@ -22,15 +22,20 @@ export default class ModalApp extends Component {
             onRequestClose={() => {
                 Alert.alert('Modal has been closed.');
             }}>
-            <View style={{marginTop: 22}}>
-                <View>
-                    <TouchableHighlight
-                            onPress={() => { this.setModalVisible(!this.state.modalVisible); }}>
-                            <Text>Sortir...</Text>
-                    </TouchableHighlight>
+              <View style={{marginTop: 22, alignItems: 'center'}}>
+                  
+                  <View style={styles.header}>
+                      <TouchableHighlight style={styles.close} onPress={() => { this.setModalVisible(!this.state.modalVisible); }}>
+                            <Text style={{color: '#FFFFFF', fontSize: 25, textAlign: 'center'}}>X</Text>
+                      </TouchableHighlight>
+                  </View>
 
-                    <Card data={this.props.card} sliderWidth={280} itemWidth={280} />
-                </View>
+                  <View style={styles.nameContainer}>
+                    <Text style={{color: '#2c3e50', fontSize: 22, textAlign: 'center'}}>{ this.props.name }</Text>
+                  </View>
+
+                  <Card data={this.props.card} sliderWidth={280} itemWidth={280} />
+
             </View>
         </Modal>
 
@@ -38,6 +43,7 @@ export default class ModalApp extends Component {
           onPress={() => { this.setModalVisible(true); }}>
           <Text style={{color: '#2c3e50', fontSize: 12}} >Voir la carte</Text>
         </TouchableHighlight>
+
       </View>
     );
   }
@@ -50,5 +56,16 @@ const styles = StyleSheet.create({
       padding: 8,
       width: 90,
       alignSelf: 'center' 
+  },
+  header: {
+    alignItems: 'flex-end'
+  },
+  close:{
+    width: 30,
+    height: 30,
+    borderRadius: 50,
+    borderColor: '#2c3e50',
+    backgroundColor: '#2c3e50',
+    alignSelf: 'flex-end'       
   }
 })

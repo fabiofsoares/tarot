@@ -18,18 +18,14 @@ export default class Card extends React.Component {
         return (
             <Pagination
               dotsLength={entries.length}
-              activeDotIndex={activeSlide}
-              containerStyle={{ backgroundColor: 'rgba(0, 0, 0, 0.75)' }}
+              activeDotIndex={activeSlide}              
               dotStyle={{
-                  width: 10,
-                  height: 10,
-                  borderRadius: 5,
-                  marginHorizontal: 8,
-                  backgroundColor: 'rgba(255, 255, 255, 0.92)'
-              }}
-              inactiveDotStyle={{
-                  // Define styles for inactive dots here
-              }}
+                width: 10,
+                height: 10,
+                borderRadius: 5,
+                marginHorizontal: 8,
+                backgroundColor: 'rgba(0, 0, 0, 0.92)'
+              }}              
               inactiveDotOpacity={0.4}
               inactiveDotScale={0.6}
             />           
@@ -67,20 +63,27 @@ export default class Card extends React.Component {
 const styles = StyleSheet.create({
     container: {
         paddingTop: 20,
-        height: 300
+        height: 400,
+        alignSelf: 'center'
     },
     slide: {
         flex: 1,
-        backgroundColor: '#fff',
+        backgroundColor: '#ecf0f1',
         alignItems: 'center',
-        justifyContent: 'center',
-        borderColor: '#000000',
-        borderWidth: 2
+        padding: 10,
+        paddingTop: 30,
+        borderColor: '#95a5a6',
+        borderWidth: 0.5       
     },
     text: {
-        textAlign: 'center'
+        textAlign: 'center',
+        marginTop: 5,
+        color: '#95a5a6'
     },
     title: {
-        textAlign: 'center'
+        textAlign: 'center',
+        textTransform: 'uppercase',
+        fontSize: 18,
+        marginBottom: 15
     }
 });
