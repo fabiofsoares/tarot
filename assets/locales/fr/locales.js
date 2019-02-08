@@ -23,7 +23,7 @@ export default {
     },
     "game": {
         "title": "Jeu de Tarot",
-        "subtitle": "Pensez à une question et poussez le bouton",
+        "subtitle": "Posez vous une question et poussez le bouton",
         "reponses":[
             {
                 "title": "Oui"
@@ -53,7 +53,7 @@ export default {
             },
             {
                 "name":"Rachel Choisis",
-                "post": "Devéloppeur Front-End",
+                "post": "Devéloppeuse Front-End",
                 "img": require("../../img/rachel_moji.png")
             }
         ],
