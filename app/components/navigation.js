@@ -16,7 +16,7 @@ const HomeStack = createStackNavigator({
 });
 
 HomeStack.navigationOptions = {
-  tabBarLabel: 'Accueil',
+  tabBarLabel: 'Introduction',
   tabBarIcon: () => (
       <Image
         source={require('../../assets/img/icons/002-house.png')}        
@@ -30,7 +30,7 @@ const StartStack = createStackNavigator({
 });
 
 StartStack.navigationOptions = {
-  tabBarLabel: 'Commencer',
+  tabBarLabel: 'Jouer',
   tabBarIcon: () => (
       <Image
         source={require('../../assets/img/icons/003-playing-cards.png')}        

@@ -22,20 +22,18 @@ export default class ModalApp extends Component {
             onRequestClose={() => {
                 Alert.alert('Modal has been closed.');
             }}>
-              <View style={{marginTop: 22, alignItems: 'center'}}>
+              <View style={{marginTop: 22, alignItems: 'center', paddingVertical: 10}}>
                   
                   <View style={styles.header}>
+                      <Text style={{color: '#2c3e50', fontSize: 22, textAlign: 'center'}}>{ this.props.name }</Text>
                       <TouchableHighlight style={styles.close} onPress={() => { this.setModalVisible(!this.state.modalVisible); }}>
                             <Text style={{color: '#FFFFFF', fontSize: 25, textAlign: 'center'}}>X</Text>
                       </TouchableHighlight>
                   </View>
 
-                  <View style={styles.nameContainer}>
-                    <Text style={{color: '#2c3e50', fontSize: 22, textAlign: 'center'}}>{ this.props.name }</Text>
-                    
+                  <View style={styles.main}>
+                    <Carousel data={this.props.card} sliderWidth={280} itemWidth={280} intro={false} />
                   </View>
-
-                  <Carousel data={this.props.card} sliderWidth={280} itemWidth={280} intro={false} />
 
             </View>
         </Modal>
@@ -59,14 +57,20 @@ const styles = StyleSheet.create({
       alignSelf: 'center' 
   },
   header: {
-    alignItems: 'flex-end'
+    alignItems: 'center',
+    width: '100%'
   },
   close:{
     width: 30,
     height: 30,
-    borderRadius: 50,
     borderColor: '#2c3e50',
     backgroundColor: '#2c3e50',
-    alignSelf: 'flex-end'       
+    position: 'absolute',
+    top: 0,
+    right: 15       
+  },
+  main:{
+    maxHeight: 450,
+    marginTop: 30
   }
 })

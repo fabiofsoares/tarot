@@ -9,7 +9,7 @@ export default {
             },
             {
                 "title": "Commencer",
-                "text": "Cliquez sur l'onglet 'Commencer' et découvrer votre carte du jour"
+                "text": "Cliquez sur l'onglet 'JOUER' et découvrer votre carte du jour"
             },
             {
                 "title": "Lancer",
@@ -22,8 +22,8 @@ export default {
         ]
     },
     "game": {
-        "title": "Jeu de Tarot",
-        "subtitle": "Posez vous une question et poussez le bouton",
+        "title": "Tentez votre chance",
+        "subtitle": "Maintenez le bouton en pensant à une question et relachez-le doigt",
         "reponses":[
             {
                 "title": "Oui"
@@ -35,7 +35,7 @@ export default {
                 "title": "Peut-être"
             },
             {
-                "title": "Attends un peu"
+                "title": "Attendez un peu"
             },
             {
                 "title": "Il y a qqch de mieux"

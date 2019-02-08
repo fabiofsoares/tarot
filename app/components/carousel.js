@@ -57,8 +57,8 @@ export default class AppCarousel extends React.Component {
     _renderCardItem ({item, index}) {
         
         return (
-            <View style={styles.slide} key={index}>                
-                {item.title && <Text style={styles.title}>{ item.title }</Text>}
+            <View style={[styles.slide, styles.cardSlide]} key={index}>                
+                {item.title && <Text style={styles.cardTitle}>{ item.title }</Text>}
                 {item.text.map((p, i) => <Text key={i} style={styles.text}>{ p }</Text> )}
             </View>
         );
@@ -100,7 +100,6 @@ const styles = StyleSheet.create({
     number:{
         width: 28,
         height: 28,
-        borderRadius: 50,
         borderColor: '#000',
         backgroundColor: '#000'       
     },
@@ -120,5 +119,10 @@ const styles = StyleSheet.create({
     title: {
         textAlign: 'center',
         fontSize: 18
+    },
+    cardTitle: {
+        textAlign: 'center',
+        fontSize: 18,
+        textTransform: 'uppercase'
     }
 });
