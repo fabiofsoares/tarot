@@ -47,7 +47,7 @@ export default class Game extends React.Component {
                 />
                                   
                 <View style={styles.main}>
-                    <View style={this.state.pressed ? styles.buttonON : styles.buttonOFF}>
+                    <View style={[this.state.pressed ? styles.ON : styles.OFF, styles.button]}>
                         <TouchableWithoutFeedback onPressIn={this.onPress.bind(this)} onPressOut={this.handlePressOut.bind(this)}>
                             <Text style={this.state.pressed ? styles.textON : styles.textOFF}>Lancer</Text>
                         </TouchableWithoutFeedback>
@@ -88,17 +88,18 @@ const styles = StyleSheet.create({
     padding: 20,
     paddingTop: 0
   },
-  buttonON:{
+  button : {
+    padding: 10
+  },
+  ON:{
     borderColor: '#2c3e50',
     backgroundColor: '#2c3e50',
-    padding: 20,
     width: 200   
   },
-  buttonOFF:{
+  OFF:{
     borderColor: '#2c3e50',
     borderWidth: 1,
     backgroundColor: '#FFFFFF',
-    padding: 20,
     width: 180   
   },
   textON:{
