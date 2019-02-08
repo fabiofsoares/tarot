@@ -66,7 +66,7 @@ export default class Game extends React.Component {
                             <View style={styles.image}>
                                 <Image
                                     style={{width: 78, height: 150}}
-                                    source={{uri: 'https://www.ma-consultation-de-voyance.fr/scripts/files/5618669524ee07.71560297/la-lune-1.png'}}
+                                    source={this.state.card && this.state.card.img}
                                 />
                             </View>
                         </View>
@@ -127,11 +127,12 @@ const styles = StyleSheet.create({
   },
   reponseContent : {
       display: 'flex',
+      flexGrow: 150,
       flexDirection: 'row',
       justifyContent: 'space-between'
   },
   image:{
-      flexGrow: 130,
+      flexGrow: 150,
       alignItems: 'center'
       
   },

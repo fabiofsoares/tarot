@@ -1,4 +1,4 @@
-{
+export default {
     "description":"Tarot card interpretations, from Mark McElroy's _A Guide to Tarot Meanings_ (http://www.madebymark.com/a-guide-to-tarot-card-meanings/)",
     "tarot_interpretations":[
        {
@@ -49,7 +49,7 @@
           "name":"Le Fou",
           "rank":0,
           "suit":"major",
-          "image": "./cards/fou.jpg"
+          "img": require("../../img/cards/fou.jpg")
        },
        {
           "descriptions":[
@@ -94,7 +94,7 @@
           "name":"Le Magicien",
           "rank":1,
           "suit":"major",
-          "image": "./cards/batelier.png"
+          "img": require("../../img/cards/batelier.png")
        },
        {
           "descriptions":[
@@ -139,10 +139,10 @@
                 ]
              }
           ],
-          "name":"La Papesse / La Grande Prêtresse",
+          "name":"La Papesse",
           "rank":2,
           "suit":"major",
-          "image": "./cards/papesse.jpg"
+          "img": require("../../img/cards/papesse.jpg")
        },
        {
           "descriptions":[
@@ -191,7 +191,7 @@
           "name":"L'Impératrice",
           "rank":3,
           "suit":"major",
-          "image": "./cards/imperatrice.jpg"
+          "img": require("../../img/cards/imperatrice.jpg")
        },
        {
           "descriptions":[
@@ -237,7 +237,7 @@
           "name":"L'Empereur",
           "rank":4,
           "suit":"major",
-          "image": "./cards/empereur.png"
+          "img": require("../../img/cards/empereur.jpg")
 
        },
        {
@@ -283,10 +283,10 @@
                 ]
              }
           ],
-          "name":"Le Pape / Hiérophante",
+          "name":"Le Pape",
           "rank":5,
           "suit":"major",
-          "image": "./cards/pape.jpg"
+          "img": require("../../img/cards/pape.jpeg")
        },
        {
           "descriptions":[
@@ -332,7 +332,7 @@
           "name":"Les Amoureux",
           "rank":6,
           "suit":"major",
-          "image": "./cards/amoureux.jpg"
+          "img": require("../../img/cards/amoureux.jpg")
        },
        {
           "descriptions":[
@@ -377,7 +377,7 @@
           "name":"Le Chariot",
           "rank":7,
           "suit":"major",
-          "image": "./cards/chariot.jpg"
+          "img": require("../../img/cards/chariot.jpg")
        },
        {
           "descriptions":[
@@ -421,7 +421,7 @@
           "name":"Force",
           "rank":8,
           "suit":"major",
-          "image": "./cards/force.jpg"
+          "img": require("../../img/cards/force.jpg")
        },
        {
           "descriptions":[
@@ -466,7 +466,7 @@
           "name":"L'Hermite",
           "rank":9,
           "suit":"major",
-          "image": "./cards/hermite.jpg"
+          "img": require("../../img/cards/hermite.jpg")
        }
     ]
  }
