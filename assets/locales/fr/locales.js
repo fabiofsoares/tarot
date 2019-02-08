@@ -1,4 +1,4 @@
-{
+export default {
     "home": {
         "title": "Jeu de Tarot",
         "subtitle": "Comment ça marche ?",
@@ -40,15 +40,19 @@
     },
     "about": {
         "title": "A propos",
-        "subtitle": "Pensez à une question et poussez le bouton",
+        "subtitle": "Projet React-Native",
         "members":[
             {
-                "name":"Fabio",
-                "poste": "dev",
-                "img": ""
+                "name":"Fabio Ferreira Soares",
+                "post": "Devéloppeur Front-End",
+                "img": require("../../img/fabio_moji.png")
+            },
+            {
+                "name":"Rachel Choisis",
+                "post": "Devéloppeur Front-End",
+                "img": require("../../img/rachel_moji.png")
             }
         ],
-        "text": "text de mentions"
-        
+        "footer": "ECV Digital, 02/2019"
     }
 }

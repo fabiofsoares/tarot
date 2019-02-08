@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import {Modal, Text, TouchableHighlight, View, StyleSheet, Alert} from 'react-native';
-import Card from './card'
+import Carousel from './carousel'
 
 export default class ModalApp extends Component {
   state = {
@@ -32,16 +32,17 @@ export default class ModalApp extends Component {
 
                   <View style={styles.nameContainer}>
                     <Text style={{color: '#2c3e50', fontSize: 22, textAlign: 'center'}}>{ this.props.name }</Text>
+                    
                   </View>
 
-                  <Card data={this.props.card} sliderWidth={280} itemWidth={280} />
+                  <Carousel data={this.props.card} sliderWidth={280} itemWidth={280} intro={false} />
 
             </View>
         </Modal>
 
         <TouchableHighlight  style={styles.button}
           onPress={() => { this.setModalVisible(true); }}>
-          <Text style={{color: '#2c3e50', fontSize: 12}} >Voir la carte</Text>
+          <Text style={{color: '#2c3e50', fontSize: 12}} >Savoir plus</Text>
         </TouchableHighlight>
 
       </View>
