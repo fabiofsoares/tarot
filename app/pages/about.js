@@ -26,7 +26,7 @@ export default class About extends React.Component {
                 subtitle={this.props.data.subtitle} 
             />
 
-            <Text style={styles.label}>Dévéloppé par :</Text>
+            <Text style={styles.label}>Développé par :</Text>
           
             <View style={ styles.main }>
                 {this.props.data.members.map((item, i) => this._renderMembers(item, i))}

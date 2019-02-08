@@ -5,19 +5,19 @@ export default {
         "intro": [
             {
                 "title": "Pourquoi ? ",
-                "text": "Bonjour, vous avez toujours été passioné par la voyance mais vous n'avez pas les moyens de consulter aller tous les jours?  Ou encore vous croyez en votre bonne étoile... Nous aussi ! C'est pourquoi nous avons crée cette application très simple. "
+                "text": "Vous avez toujours été passioné par la voyance mais vous n'avez pas les moyens de consulter tous les jours?  Ou encore vous croyez en votre bonne étoile... Nous aussi ! C'est pourquoi nous avons crée cette application très simple. "
             },
             {
                 "title": "Commencer",
-                "text": "Cliquez sur l'onglet 'JOUER' et découvrer votre carte du jour"
+                "text": "Cliquez sur l'onglet 'JOUER' et découvrez votre carte du jour."
             },
             {
                 "title": "Lancer",
-                "text": "Cliquez et maintenez légérement le bouton 'Lancez' afin que carte vous parle "
+                "text": "Cliquez et maintenez légérement le bouton 'Lancez' en pensant à une question afin que carte vous parle. "
             },
             {
                 "title": "Croyez en votre carte",
-                "text": "Votre carte est sélectionné. Et il ne reste plus qu'une chose c'est de croire en votre destin et pensez à cliquer sur le bouton 'en savoir plus' pour avoir plus de détail "
+                "text": "Votre carte est sélectionné. Et il ne reste plus qu'une chose c'est de croire en votre destin et pensez à cliquer sur le bouton 'en savoir plus' pour avoir plus de détail sur votre carte. "
             }
         ]
     },
