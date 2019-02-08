@@ -1,5 +1,5 @@
 import React from 'react';
-import { TouchableWithoutFeedback, StyleSheet, Text, View } from 'react-native';
+import { TouchableWithoutFeedback, StyleSheet, Text, View, Image } from 'react-native';
 import renderIf from 'render-if';
 import Header from '../components/header'
 import Modal from '../components/modal'
@@ -23,7 +23,7 @@ export default class Game extends React.Component {
 
     timing = () => {
       this.setState((prevState) => ({
-          time: prevState.time >= cards.tarot_interpretations.length ? 0 : prevState.time + 1
+          time: prevState.time >= cards.tarot_interpretations.length - 1 ? 0 : prevState.time + 1
       })); 
     }
 
@@ -56,11 +56,21 @@ export default class Game extends React.Component {
                 
                 { renderIf (this.state.reponse)(
                     <View style={styles.reponse}>
-                        <Text style={styles.label}>Reponse :</Text>
-                        <Text style={styles.resp}>{ this.state.reponse && this.state.reponse }</Text>
-                        <Text style={styles.label}>Votre Carte :</Text>
-                        <Text style={styles.cardName}>{ this.state.card && this.state.card.name }</Text>
-                        <Modal name={this.state.card.name} card={ this.state.card.descriptions }/>
+                      <View style={styles.reponseContent}>
+                            <View style={styles.reponseContentText}>
+                                <Text style={styles.label}>Reponse :</Text>
+                                <Text style={styles.resp}>{ this.state.reponse && this.state.reponse }</Text>
+                                <Text style={styles.label}>Votre Carte :</Text>
+                                <Text style={styles.cardName}>{ this.state.card && this.state.card.name }</Text>
+                            </View>
+                            <View style={styles.image}>
+                                <Image
+                                    style={{width: 78, height: 150}}
+                                    source={{uri: 'https://www.ma-consultation-de-voyance.fr/scripts/files/5618669524ee07.71560297/la-lune-1.png'}}
+                                />
+                            </View>
+                        </View>
+                      <Modal name={this.state.card.name} card={ this.state.card.descriptions }/>
                     </View>
                 )}
 
@@ -104,7 +114,7 @@ const styles = StyleSheet.create({
   main: {
         flex: 1,
         alignItems: 'center',
-        marginTop: 50,
+        marginTop: 30,
         width: '100%'       
   },
   reponse: {      
@@ -112,14 +122,24 @@ const styles = StyleSheet.create({
     width: '100%', 
     borderColor: '#2c3e50',
     borderWidth: 0.3,
-    padding: 10
+    padding: 10,
+    marginTop: 30
+  },
+  reponseContent : {
+      display: 'flex',
+      flexDirection: 'row',
+      justifyContent: 'space-between'
+  },
+  image:{
+      flexGrow: 130,
+      alignItems: 'center'
+      
   },
   label: {
     color:'#fff',
     backgroundColor:'#2c3e50',
     textAlign: 'left',
     fontSize: 14,
-   // marginTop: 20,
     padding: 5,
     width: 100
   },

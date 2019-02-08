@@ -1,4 +1,5 @@
-"home": {
+export default {
+    "home": {
         "title": "Jeu de Tarot",
         "subtitle": "Comment ça marche ?",
         "intro": [
@@ -44,12 +45,13 @@
             {
                 "name":"Fabio Ferreira Soares",
                 "post": "Devéloppeur Front-End",
-                "img": ""
+                "img": require("../../img/fabio_moji.png")
             },
             {
                 "name":"Rachel Choisis",
                 "post": "Devéloppeur Front-End",
-                "img":""            }
+                "img": require("../../img/rachel_moji.png")
+            }
         ],
         "footer": "ECV Digital, 02/2019"
     }

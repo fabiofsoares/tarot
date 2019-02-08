@@ -32,7 +32,7 @@ export default class AppCarousel extends React.Component {
         );
     }
    
-    _renderItem ({item, index}) {
+    _renderIntroItem ({item, index}) {
         return (
             <View style={styles.slide} key={index}>
                 
@@ -54,13 +54,23 @@ export default class AppCarousel extends React.Component {
         );
     }
 
+    _renderCardItem ({item, index}) {
+        
+        return (
+            <View style={styles.slide} key={index}>                
+                {item.title && <Text style={styles.title}>{ item.title }</Text>}
+                {item.text.map((p, i) => <Text key={i} style={styles.text}>{ p }</Text> )}
+            </View>
+        );
+    }
+
     render () {
         return (
             <View>
                 <Carousel
                     ref={(c) => { this._carousel = c; }}
                     data={this.state.entries}
-                    renderItem={this._renderItem}
+                    renderItem={ this.props.intro ? this._renderIntroItem : this._renderCardItem }
                     onSnapToItem={(index) => this.setState({ activeSlide: index }) }
                     sliderWidth={this.props.sliderWidth}
                     itemWidth={this.props.itemWidth}             

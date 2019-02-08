@@ -18,7 +18,7 @@ export default class Home extends React.Component {
                 />                
                 
                 <View style={styles.main}>
-                    <Carousel data={this.props.data.intro} sliderWidth={280} itemWidth={280}/>
+                    <Carousel data={this.props.data.intro} sliderWidth={280} itemWidth={280} intro={true} />
                 </View>
                               
             </View>
