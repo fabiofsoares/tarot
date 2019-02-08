@@ -17,7 +17,7 @@ export default {
             },
             {
                 "title": "Croyez en votre carte",
-                "text": "Votre carte est sélectionné. Et il ne reste plus qu'un chose de croire en votre destin. "
+                "text": "Votre carte est sélectionné. Et il ne reste plus qu'une chose c'est de croire en votre destin et pensez à cliquer sur le bouton 'en savoir plus' pour avoir plus de détail "
             }
         ]
     },
