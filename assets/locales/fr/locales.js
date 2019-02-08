@@ -4,16 +4,20 @@ export default {
         "subtitle": "Comment ça marche ?",
         "intro": [
             {
-                "title": "bonjour, item 1",
-                "text": "Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard"
+                "title": "Pourquoi ? ",
+                "text": "Bonjour, vous avez toujours été passioné par la voyance mais vous n'avez pas les moyens de consulter aller tous les jours?  Ou encore vous croyez en votre bonne étoile... Nous aussi ! C'est pourquoi nous avons crée cette application très simple. "
             },
             {
-                "title": "bonjour, item 2",
-                "text": "Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard"
+                "title": "Commencer",
+                "text": "Cliquez sur l'onglet 'Commencer' et découvrer votre carte du jour"
             },
             {
-                "title": "bonjour, item 3",
-                "text": "Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard"
+                "title": "Lancer",
+                "text": "Cliquez et maintenez légérement le bouton 'Lancez' afin que carte vous parle "
+            },
+            {
+                "title": "Croyez en votre carte",
+                "text": "Votre carte est sélectionné. Et il ne reste plus qu'un chose de croire en votre destin. "
             }
         ]
     },
